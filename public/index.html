@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EduMark • AI Essay Feedback</title>
+  <link
+  href="https://fonts.googleapis.com/css2?
+    family=Roboto:wght@300;400;500;700&
+    family=Open+Sans:wght@400;600&display=swap"
+  rel="stylesheet"
+/>
+  <link rel="stylesheet" href="../src/css/styles.css" />
+</head>
+<body>
+  <header class="header">
+    <img src="assets/logo-placeholder.svg" alt="EduMark logo" class="logo" />
+    <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+  </header>
+
+  <main class="main-container">
+    <h1>Submit Your Essay</h1>
+    <form id="essay-form">
+      <textarea id="essay-input" placeholder="Paste your essay here..." rows="10"></textarea>
+      <div class="form-actions">
+        <button type="submit" id="submit-btn">Get Feedback</button>
+      </div>
+      <p id="error-msg" class="error hidden">Please enter your essay.</p>
+    </form>
+
+    <div id="loading" class="loading hidden">Analyzing…</div>
+
+    <section id="feedback" class="feedback hidden">
+      <!-- Feedback cards will be injected here -->
+    </section>
+  </main>
+
+  <!-- Updated script include -->
+  <script type="module" src="../src/js/script.js"></script>
+</body>
+</html>
